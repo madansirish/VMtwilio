@@ -1,0 +1,12 @@
+{
+    "environment": "dev",
+    "debug": true,
+    "dbhost": "localhost",
+    "dbname":"Twilio",
+    "dbuser":"root",
+    "dbpass":"root",
+    "host" : "0.0.0.0",
+    "account_sid" : "AC987666beba1189928afda5ce600383a5",
+    "Auth_token" : "5385c43da2f46802367749aec8715a4f",
+    "Twilio_number": "+18556638279"
+}

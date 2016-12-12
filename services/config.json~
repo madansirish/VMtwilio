@@ -1,0 +1,11 @@
+{
+    "environment": "dev",
+    "debug": true,
+    "dbhost": "mysql.dev.wonderwe.com",
+    "dbname":"7eleven",
+    "dbuser":"root",
+    "dbpass":"scriptbees1$",
+    "logfile": "capitalcity.log",
+    "logtime": "midnight",
+    "host" : "0.0.0.0"
+}
