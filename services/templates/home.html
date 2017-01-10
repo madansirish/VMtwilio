@@ -1,0 +1,38 @@
+<html lang = "en">
+  <head>
+    <title>Message</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>SEND YOUR MESSAGE</h1>
+    <form  action=" {{url_for('sms')}}" method="POST">
+       <fieldset>
+          <legend>Fill your details</legend>
+          
+          <p>
+             <label>Sender's number</label>&nbsp;&nbsp;
+             <select id = "slist" name="slist">
+               <option value = "+18556638279 ">+1 855-663-8279 </option>
+               <option value = "+18556638279">+1-855-663-8279</option>
+               <option value = "+12013895506">+12013895506</option>
+               <option value = "+41798072491">+41798072491</option>
+             </select>
+          </p>
+          <p>
+             <label>Receiver's  number</label>&nbsp;&nbsp;&nbsp;&nbsp;
+             <select id = "rlist" name="rlist">
+               <option value = "+918093660692">+91-8093660692</option>
+               <option value = "+18556638279">+1-8556638279</option>
+               <option value = "+919949220892">91-9949220892</option>
+               <option value = "+41798072491">+41798072491</option>
+               <option value = "+12013895506">+12013895506</option>
+             </select>
+          </p>
+          <p>
+            <label>Your Message</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea name="msg" id="msg"></textarea></p>
+          <p align"center"><input type="submit" value="Send"></p>
+       </fieldset>
+    </form>
+  </body>
+  </html>

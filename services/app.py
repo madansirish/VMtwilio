@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import Flask, jsonify, abort, make_response, request, g
+from flask import Flask, jsonify, abort, make_response, request, g , render_template
 from flask_restful import reqparse
 from flask_restful import Resource, Api
 from twilio.rest import TwilioRestClient
@@ -52,6 +52,14 @@ def get_db():
     if not hasattr(g, 'appdb'):
         g.appdb = connect_db()
     return g.appdb
+
+@app.route('/',methods=['GET','POST'])
+def home():
+     cursor = g.appdb.cursor()
+     query="""SELECT * FROM countryCodes"""
+     cursor.execute(query)
+     rv=cursor.fetchall()
+     return render_template('index.html',rv=rv)
 
 @app.route('/receivingMessages',methods=['POST'])
 def sms():

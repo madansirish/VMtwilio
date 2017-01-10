@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   body {background-color: powderblue;}
+   h1   {color: blue;}
+
+   .button {
+            padding: 10px 20px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+
+     <form  action="" method="POST">
+          <fieldset>
+           
+            <legend><h3><I>Select a number</I></h3></legend>  
+             <p>
+              <label>Country</label>
+              
+                 <!-- <option value="US">United States (+1)</option>
+                 <option value="AU">Australia (+61)</option>
+                 <option value="BE"> Belgium(+32)</option>
+                  <option value="BG"> Bulgaria(+359)</option>
+                  <option value="BR"> Brazil(+55)</option>
+                  <option value="CA"> Canada(+1)</option>
+                  <option value="CL"> Chile(+56)</option>
+                  <option value="CY"> Cyprus(+357)</option>
+                  <option value="DK"> Denmark(+45)</option>
+                  <option value="DO"> Dominican Republic(+1829)</option>
+                  <option value="EE"> Estonia(+372)</option>
+                  <option value="FI"> Finland(+358)</option>
+                  <option value="FR"> France(+33)</option>
+                  <option value="GR"> Greece(+30)</option>
+                  <option value="ID"> Indonesia(+62)</option>
+                  <option value="IE"> Ireland(+ 353)</option>
+                  <option value="IT"> Italy(+39)</option>
+                  <option value="JP"> Japan(+81)</option>
+                  <option value="LT"> Lithuania(+370)</option>
+                  <option value="LU"> Luxembourg(+352)</option>
+                  <option value="MT"> Malta(+356)</option>
+                  <option value="NL"> Netherlands(+31)</option>
+                  <option value="NZ">New Zealand(+64)</option>
+                  <option value="PE ">Peru(+51)</option>
+                  <option value="PL"> Poland(+48)</option>
+                  <option value="PR">Puerto Rico(+1)</option>
+                  <option value="PT"> Portugal(+351)</option>
+                  <option value="RO"> Romania(+40)</option>
+                  <option value="SE"> Sweden(+46)</option> -->
+
+                    <select >
+                      
+                      {% for i in rv %}
+                          <option value="{{ i['countrycode'] }}"> {{ i['countryname'] }}  ( {{ i['teleCode'] }} ) </option>
+                      {% endfor %}
+  
+                  </select>
+              </p>
+
+          <p>
+            <label>Name</label>
+            <input type="name" id="name" name="name"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Your Number</label>
+            <input type="text" name="ynumber" id="ynumber" placeholder="Your Number">
+          </p>
+          <p>
+            <label>Area code</label>
+            <input type="number" id="acode" name="acode" placeholder="Enter area code e.g 617"/>
+          </p>
+          <p>
+            <label>Match to</label>
+             <input type="text" name="mnumber" id="mnumber" placeholder="Search by digits (optional)">
+             <p>Search by area code, prefix, or characters you want in your phone number.</p>
+          </p>
+
+          <p>
+         
+          <button class="button">Search</button>
+          </p>
+          
+      </fieldset>
+        
+
+</form>
+</body>
+</html>
