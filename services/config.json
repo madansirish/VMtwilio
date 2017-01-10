@@ -2,7 +2,7 @@
     "environment": "dev",
     "debug": true,
     "dbhost": "localhost",
-    "dbname":"Twilio",
+    "dbname":"twilio",
     "dbuser":"root",
     "dbpass":"root",
     "host" : "0.0.0.0",

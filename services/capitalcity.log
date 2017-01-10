@@ -1,0 +1,356 @@
+2016-12-13 12:24:56,974 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 36, in connect_db
+    db=config.get("dbname"), cursorclass=MySQLdb.cursors.DictCursor,sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+AttributeError: 'module' object has no attribute 'cursors'
+2016-12-13 12:25:58,298 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 12:26:04,474 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 36, in connect_db
+    db=config.get("dbname"), cursorclass=MySQLdb.cursors.DictCursor,sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+AttributeError: 'module' object has no attribute 'cursors'
+2016-12-13 12:27:09,040 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 12:30:20,719 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"), cursorclass=DictCursor,sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:31:08,704 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-13 12:31:34,568 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"),sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:31:34,645 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"),sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:31:37,673 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"),sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:31:38,558 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"),sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:31:41,232 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"),sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:31:46,346 - __main__ - ERROR - Failed to Connect to the database
+Traceback (most recent call last):
+  File "app.py", line 37, in connect_db
+    db=config.get("dbname"),sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'Twilio'")
+2016-12-13 12:33:12,401 - fetching all the country codes - INFO - Entered into Countrycodes get method
+2016-12-13 12:33:17,438 - fetching all the country codes - INFO - Exited Countrycodes get method
+2016-12-13 12:33:21,891 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 12:33:21] "GET /api/countrycodes HTTP/1.1" 200 -
+2016-12-13 12:33:40,972 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-13 12:33:45,632 - fetching all the country codes - INFO - Entered into Countrycodes get method
+2016-12-13 12:33:46,031 - fetching all the country codes - INFO - Exited Countrycodes get method
+2016-12-13 12:33:51,089 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 12:33:51] "GET /api/countrycodes HTTP/1.1" 200 -
+2016-12-13 12:35:50,161 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 12:43:11,780 - Sending a message from twilio - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 12:43:11,827 - Sending a message from twilio - ERROR - DB connection or url parameters error
+Traceback (most recent call last):
+  File "/home/scriptbees/projects/twilio/services/routes/twils.py", line 92, in post
+    client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+NameError: global name 'ACCOUNT_SID' is not defined
+2016-12-13 12:43:15,487 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 12:43:15] "POST /api/sendingmessage HTTP/1.1" 500 -
+2016-12-13 12:44:11,017 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 12:44:42,790 - Sending a message from twilio - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 12:44:42,809 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 12:44:42] "POST /api/sendingmessage HTTP/1.1" 500 -
+2016-12-13 12:45:08,088 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 12:45:14,507 - Sending a message from twilio - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 12:45:14,526 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 12:45:14] "POST /api/sendingmessage HTTP/1.1" 500 -
+2016-12-13 12:45:29,426 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 12:45:33,867 - Sending a message from twilio - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 12:45:41,680 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 12:45:41] "POST /api/sendingmessage HTTP/1.1" 200 -
+2016-12-13 13:10:59,933 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 13:11:22,985 - Sending a message from twilio - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 13:11:24,953 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:11:24] "POST /api/sendingmessage HTTP/1.1" 200 -
+2016-12-13 13:12:40,182 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 13:25:48,731 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 13:25:48,957 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:25:48] "GET /api/sendingmessage?fromnumber=%27+18556638279%27 HTTP/1.1" 500 -
+2016-12-13 13:26:21,755 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 13:26:25,654 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 13:26:25,676 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:26:25] "GET /api/sendingmessage?fromnumber=%27+18556638279%27 HTTP/1.1" 500 -
+2016-12-13 13:26:47,121 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 13:26:52,242 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 13:26:52,265 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:26:52] "GET /api/sendingmessage?fromnumber=%27+18556638279%27 HTTP/1.1" 500 -
+2016-12-13 13:27:11,618 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 13:27:11,642 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:27:11] "GET /api/sendingmessage?fromnumber=+18556638279%27 HTTP/1.1" 500 -
+2016-12-13 13:27:22,770 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 13:27:22,796 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:27:22] "GET /api/sendingmessage?fromnumber=%22+18556638279%22 HTTP/1.1" 500 -
+2016-12-13 13:29:10,026 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 13:29:13,777 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 13:29:13,801 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 13:29:13] "GET /api/sendingmessage?fromnumber=%2218556638279%22 HTTP/1.1" 500 -
+2016-12-13 13:33:13,481 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:22:43,548 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 15:22:43,849 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:22:43] "GET /api/sendingmessage?fromnumber=%2218556638279%22 HTTP/1.1" 500 -
+2016-12-13 15:22:56,225 - sendingmessage get call - INFO - fetches all the messages that have been sent so far from a number
+2016-12-13 15:22:59,243 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:22:59] "GET /api/sendingmessage?fromnumber=18556638279 HTTP/1.1" 500 -
+2016-12-13 15:26:51,959 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:30:05,150 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:30:08,416 - create a new twilio number - ERROR - DB connection or url parameters error
+Traceback (most recent call last):
+  File "/home/scriptbees/projects/twilio/services/routes/twils.py", line 134, in get
+    client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+NameError: global name 'ACCOUNT_SID' is not defined
+2016-12-13 15:30:08,472 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:30:08] "GET /api/forwardingmessage HTTP/1.1" 500 -
+2016-12-13 15:30:43,081 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:30:46,922 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:30:48,662 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:30:48] "GET /api/forwardingmessage HTTP/1.1" 500 -
+2016-12-13 15:32:18,811 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:32:21,433 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:32:35,730 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 15:32:35,782 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:32:35] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 15:37:54,804 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:38:18,391 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:38:38,489 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 15:38:48,529 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:38:48] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 15:43:40,034 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:46:50,307 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:46:56,826 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 15:46:56,890 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:46:56] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 15:48:49,572 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:48:54,083 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:49:01,342 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 15:49:07,397 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:49:07] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 15:49:49,967 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:49:54,642 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:50:00,784 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 15:50:01,943 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:50:01] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 15:51:31,271 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:51:34,643 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:51:37,022 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 15:51:37,027 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:51:37] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 15:54:48,746 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:54:52,620 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:54:52,789 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:54:52] "GET /api/forwardingmessage HTTP/1.1" 500 -
+2016-12-13 15:55:01,566 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:55:01,592 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:55:01] "GET /api/forwardingmessage HTTP/1.1" 500 -
+2016-12-13 15:55:11,081 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 15:55:20,594 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:55:20,623 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:55:20] "GET /api/forwardingmessage HTTP/1.1" 500 -
+2016-12-13 15:55:34,617 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 15:55:34,650 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 15:55:34] "GET /api/forwardingmessage HTTP/1.1" 500 -
+2016-12-13 16:08:55,066 - fetching all the country codes - INFO - Entered into Countrycodes get method
+2016-12-13 16:08:55,335 - fetching all the country codes - INFO - Exited Countrycodes get method
+2016-12-13 16:08:55,342 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:08:55] "GET /api/countrycodes HTTP/1.1" 200 -
+2016-12-13 16:09:06,799 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:09:08,687 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:09:08,691 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:09:08] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:36:53,595 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 16:37:07,277 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:37:09,465 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:37:09,476 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:37:09] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:39:38,975 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 16:40:34,553 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:40:36,747 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:40:36,754 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:40:36] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:43:06,305 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 16:43:09,800 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:43:12,184 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:43:12,194 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:43:12] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:43:45,068 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 16:43:48,274 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:43:50,460 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:43:50,469 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:43:50] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:45:40,888 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 16:45:43,590 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:45:46,204 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:45:46,211 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:45:46] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:47:20,662 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 16:54:50,526 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 16:54:52,738 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 16:54:52,744 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 16:54:52] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 16:58:03,660 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 17:20:45,410 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 17:20:48,142 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 17:20:48,162 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 17:20:48] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 17:20:59,620 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 17:22:46,785 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 17:22:48,657 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 17:22:48,664 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 17:22:48] "GET /api/forwardingmessage HTTP/1.1" 200 -
+2016-12-13 17:53:34,577 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:01:30,755 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:01:30,774 - create a new twilio number - ERROR - DB connection or url parameters error
+Traceback (most recent call last):
+  File "/home/scriptbees/projects/twilio/services/routes/twils.py", line 49, in post
+    client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+NameError: global name 'ACCOUNT_SID' is not defined
+2016-12-13 18:01:30,946 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:01:30] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:01:50,378 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:01:55,760 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:01:57,230 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:01:57,236 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:01:57] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:02:12,433 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:02:13,700 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:02:13,705 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:02:13] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:02:36,810 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:02:38,326 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:02:38,329 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:02:38] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:03:42,499 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:03:43,966 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:03:44,018 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:03:44] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:05:57,173 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:06:17,532 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:06:19,136 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:06:19,163 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:06:19] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:11:34,436 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:11:38,353 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:11:39,963 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:11:39] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:12:18,147 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:12:22,322 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:12:23,858 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:12:23] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:14:46,402 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:14:50,694 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:14:52,150 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:14:52,172 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:14:52] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:17:59,799 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:18:08,256 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:18:10,040 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:18:10,045 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:18:10] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:18:34,744 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:18:37,612 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:18:39,178 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:18:39,183 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:18:39] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:21:47,837 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:21:49,344 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:21:49,349 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:21:49] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:22:24,128 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:22:29,956 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:22:31,430 - create a new twilio number - INFO - Exited from Add_User post method
+2016-12-13 18:22:31,456 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:22:31] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:24:08,371 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-13 18:35:17,431 - Purchasing a New Number - INFO - Entered into PUT method to purchase a new twilio number
+2016-12-13 18:35:17,583 - Purchasing a New Number - ERROR - DB Connection error
+Traceback (most recent call last):
+  File "/home/scriptbees/projects/twilio/services/routes/twils.py", line 77, in put
+    chosen =request.json['chosen']
+KeyError: 'chosen'
+2016-12-13 18:35:18,325 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:35:18] "PUT /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 18:35:28,604 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-13 18:35:30,048 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2016-12-13 18:35:30,054 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:35:30] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-13 18:36:24,998 - Purchasing a New Number - INFO - Entered into PUT method to purchase a new twilio number
+2016-12-13 18:36:26,942 - Purchasing a New Number - INFO - Exited from Purchasing a new number PUT method
+2016-12-13 18:36:26,972 - werkzeug - INFO - 127.0.0.1 - - [13/Dec/2016 18:36:26] "PUT /api/twilionewnumber HTTP/1.1" 500 -
+2016-12-13 19:17:16,537 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading
+2016-12-15 13:09:55,182 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:09:55] "POST /sms HTTP/1.1" 200 -
+2016-12-15 13:12:57,852 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:13:21,473 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:13:21] "POST /sms HTTP/1.1" 400 -
+2016-12-15 13:14:02,050 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:14:41,725 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:14:41] "POST /sms HTTP/1.1" 500 -
+2016-12-15 13:15:54,108 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:15:54] "POST /sms HTTP/1.1" 500 -
+2016-12-15 13:21:03,568 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:22:44,543 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:22:44] "POST /receivingMessages HTTP/1.1" 200 -
+2016-12-15 13:24:30,911 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:27:02,492 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:27:02] "POST /receivingMessages HTTP/1.1" 500 -
+2016-12-15 13:28:17,821 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:29:51,584 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:29:51] "POST /receivingMessages HTTP/1.1" 500 -
+2016-12-15 13:30:02,211 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:30:25,486 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:30:25] "POST /receivingMessages HTTP/1.1" 400 -
+2016-12-15 13:30:43,286 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:32:11,609 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:32:11] "POST /receivingMessages HTTP/1.1" 200 -
+2016-12-15 13:34:20,640 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:34:41,632 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:34:41] "POST /receivingMessages HTTP/1.1" 500 -
+2016-12-15 13:34:59,210 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:35:21,097 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:35:21] "POST /receivingMessages HTTP/1.1" 200 -
+2016-12-15 13:38:06,422 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:40:55,680 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:40:55] "POST /receivingMessages HTTP/1.1" 200 -
+2016-12-15 13:41:39,261 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/app.py', reloading
+2016-12-15 13:48:15,157 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:48:15] "POST /receivingMessages HTTP/1.1" 500 -
+2016-12-15 13:53:22,586 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:53:22] "GET / HTTP/1.1" 404 -
+2016-12-15 13:53:23,988 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:53:23] "GET /favicon.ico HTTP/1.1" 404 -
+2016-12-15 13:53:42,425 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2016 13:53:42] "GET /receivingMessages HTTP/1.1" 405 -
+2016-12-18 22:07:42,857 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-18 22:07:45,156 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2016-12-18 22:07:45,164 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2016 22:07:45] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2016-12-18 22:08:19,558 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2016-12-18 22:08:21,279 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2016-12-18 22:08:21,286 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2016 22:08:21] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 18:59:13,280 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 18:59:13] "GET / HTTP/1.1" 404 -
+2017-01-10 18:59:14,164 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 18:59:14] "GET /favicon.ico HTTP/1.1" 404 -
+2017-01-10 18:59:51,106 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 18:59:51] "GET /api/twilionewnumber HTTP/1.1" 405 -
+2017-01-10 19:01:33,943 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:01:33,953 - create a new twilio number - ERROR - DB connection or url parameters error
+Traceback (most recent call last):
+  File "/home/scriptbees/projects/twilio/services/routes/twils.py", line 46, in post
+    countrycode = request.json['countrycode']
+KeyError: 'countrycode'
+2017-01-10 19:01:34,055 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:01:34] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2017-01-10 19:10:08,385 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:10:09,920 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:10:09,978 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:10:09] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:10:34,751 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:10:35,918 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:10:35,928 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:10:35] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:12:40,787 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:12:42,714 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:12:42,728 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:12:42] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:13:27,392 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:13:28,787 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:13:28,811 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:13:28] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:13:44,356 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:13:45,513 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:13:45,527 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:13:45] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:13:59,153 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:14:00,490 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:14:00] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2017-01-10 19:14:08,037 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:14:09,204 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:14:09] "POST /api/twilionewnumber HTTP/1.1" 500 -
+2017-01-10 19:14:24,068 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:14:25,258 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:14:25,263 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:14:25] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:14:34,972 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:14:36,304 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:14:36,314 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:14:36] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:15:00,289 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:15:01,688 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:15:01,694 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:15:01] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:15:36,340 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:15:37,784 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:15:37,795 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:15:37] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:15:45,314 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:15:46,647 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:15:46,653 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:15:46] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:15:53,043 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:15:54,327 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:15:54,334 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:15:54] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:15:59,866 - create a new twilio number - INFO - Entered into TwilioNewNumber get methos
+2017-01-10 19:16:01,216 - create a new twilio number - INFO - Exited from genrating twilio number post method
+2017-01-10 19:16:01,223 - werkzeug - INFO - 127.0.0.1 - - [10/Jan/2017 19:16:01] "POST /api/twilionewnumber HTTP/1.1" 200 -
+2017-01-10 19:17:17,362 - werkzeug - INFO -  * Detected change in '/home/scriptbees/projects/twilio/services/routes/twils.py', reloading

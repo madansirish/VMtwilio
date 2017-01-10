@@ -2,9 +2,13 @@
 from flask import Flask, jsonify, abort, make_response, request, g
 from flask_restful import reqparse
 from flask_restful import Resource, Api
+from twilio.rest import TwilioRestClient
+from twilio import twiml
 import MySQLdb
+from MySQLdb.cursors import DictCursor
 import logging
 import json
+import datetime
 import logging.config
 import sys
 
@@ -14,7 +18,10 @@ import time
 
 
 #import routes here
-from routes.twils import NewNumberGeneration
+from routes.twils import Countrycodes
+from routes.twils import TwilioNewNumber
+from routes.twils import SendingMessage
+from routes.twils import ForwardingMessage
 
 app = Flask(__name__)
 
@@ -32,12 +39,11 @@ def connect_db():
         db = MySQLdb.connect(host=config.get('dbhost'),  # your host, usually localhost
                          user=config.get("dbuser"),  # your username
                          passwd=config.get("dbpass"),  # your password
-                         db=config.get("dbname"), cursorclass=MySQLdb.cursors.DictCursor,sql_mode="STRICT_TRANS_TABLES")  # name of the data base
+                         db=config.get("dbname"), cursorclass=DictCursor,sql_mode="STRICT_TRANS_TABLES")  # name of the data base
         return db
     except:
         logger.error('Failed to Connect to the database', exc_info=True)
         sys.exit("not able to connect to database")
-
 
 def get_db():
     """Opens a new database connection if there is none yet for the
@@ -47,6 +53,21 @@ def get_db():
         g.appdb = connect_db()
     return g.appdb
 
+@app.route('/receivingMessages',methods=['POST'])
+def sms():
+    sid=config.get("account_sid")
+    token=config.get("Auth_token")
+    now=datetime.datetime.now()
+    recvtime=now.strftime('%Y-%m-%d %H:%M:%S')
+    forw = '+919951439132'
+
+    client = TwilioRestClient(sid, token)
+    number = request.form['From']
+    mesagecon = request.form['Body']
+    to =request.form['To']
+    MsgSid = request.form['MessageSid']
+    fordmsg='Hi madan '+number+' said '+mesagecon+ ' on '+recvtime
+    client.messages.create(to=forw,from_='+18556638279',body=fordmsg)
 
 @app.before_request
 def before_request():
@@ -79,6 +100,11 @@ def setEmailRequirements():
         g.config = config
 
 #give your URLs here
+
+api.add_resource(SendingMessage, '/api/sendingmessage', endpoint='SendingMessage')
+api.add_resource(TwilioNewNumber, '/api/twilionewnumber', endpoint='TwilioNewNumber')
+api.add_resource(Countrycodes, '/api/countrycodes', endpoint='Countrycodes')
+api.add_resource(ForwardingMessage,'/api/forwardingmessage',endpoint='ForwardingMessage')
 
 @app.route('/api')
 def index():
