@@ -11,7 +11,7 @@ import json
 import datetime
 import logging.config
 import sys
-
+import json
 import kaptan
 import os
 import time
@@ -28,6 +28,10 @@ app = Flask(__name__)
 config = kaptan.Kaptan(handler="json")
 config.import_config(os.getenv("CONFIG_FILE_PATH", 'config.json'))
 environment = config.get('environment')
+
+
+ACCOUNT_SID=config.get("account_sid")
+AUTH_TOKEN=config.get("Auth_token")
 
 api = Api(app)
 logger = logging.getLogger(__name__)
@@ -53,13 +57,101 @@ def get_db():
         g.appdb = connect_db()
     return g.appdb
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/')
 def home():
      cursor = g.appdb.cursor()
      query="""SELECT * FROM countryCodes"""
      cursor.execute(query)
      rv=cursor.fetchall()
      return render_template('index.html',rv=rv)
+
+
+@app.route('/choosenum', methods=['POST'])
+def choosenum():
+
+    country=str(request.form['countries'])
+    phno=str(request.form['ynumber'])
+    contain=str(request.form['mnumber'])
+    name=str(request.form['name'])
+    areaCode=str(request.form['areacode'])
+    now=datetime.datetime.now()
+    datecreation=now.strftime("%Y-%m-%d %H:%M:%S")
+    
+    db = MySQLdb.connect( host="localhost",user="root",passwd="root",db="twilio" )
+    cur = db.cursor()
+    client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+    numbers = client.phone_numbers.search(
+        areaCode=areaCode,
+        country=country,
+        type="local",
+        contains=contain
+    )
+    if (len(numbers)>0):
+        allnumbers=[]
+        for i in numbers:
+            di={}
+            di['friendly_name']=i.friendly_name
+            di['phone_number']=i.phone_number
+            allnumbers.append(di)
+        print "<<<<<<<<<<<<<<<< these numbers are available>>>>>>>>>>>>>>>>",allnumbers
+           
+    else:
+        allnumbers= "sorry no numbers available"
+    return render_template('response.html',result=allnumbers)
+
+
+    # return "hi"
+ #    # return jsonify(request.form)
+
+
+
+ # # try:
+        
+       
+
+
+
+ #        # cursor = g.appdb.cursor()
+
+ #     # except:
+
+ #     #        logger.error("DB connection or url parameters error", exc_info=True)
+        
+ #        client = TwilioRestClient(sid,token)
+ #        numbers = client.phone_numbers.search(area_code=areacode,country=countrycode,type="local")
+
+    # ACCOUNT_SID = "AC7f31123e044d86fcbaf0934dc66c6788" 
+    # AUTH_TOKEN = "c732383c7be727ce64b2d3bff60e8724"
+    # country=str(request.form['countries'])
+    # phno=str(request.form['ynumber'])
+    # contain=str(request.form['mnumber'])
+    # name=str(request.form['name'])
+    # areaCode=str(request.form['areacode'])
+    # now=datetime.datetime.now()
+    # datecreation=now.strftime("%Y-%m-%d %H:%M:%S")
+
+
+    # print datecreation,areaCode,name,contain,phno,country
+
+
+    # # db = MySQLdb.connect( host="localhost",user="root",passwd="root",db="twilio" )
+    # # cur = db.cursor()
+    # client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+    # numbers = client.phone_numbers.search(
+    #     areaCode=areaCode,
+    #     country=country,
+    #     type="local",
+    #     contains=contain
+    # )
+
+ 
+    # # logger.info('Exited from genrating twilio number post method')
+    # return lis
+        # return jsonify({"status":status, "response":lis})
+   
+    # print result
+    # return render_template('response.html', result=result)
+
 
 @app.route('/receivingMessages',methods=['POST'])
 def sms():

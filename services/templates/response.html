@@ -1,0 +1,44 @@
+<html>
+<head></head>
+<style>
+   body {background-color: powderblue;}
+
+
+   .button {
+            padding: 10px 20px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+ </style>
+<body>
+	<h1>List of numbers available are:</h1>
+
+
+  {% for nos in result %}
+        <input type="radio" name="nos" value={{ nos['phone_number'] }} checked> {{ nos['friendly_name'] }}<br>
+        
+   {% endfor %}
+ <form >
+ <center><p><button class="button">Purchase</button></p></center>
+</form>
+ 
+ 
+</body>
+</html>
