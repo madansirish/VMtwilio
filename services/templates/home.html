@@ -2,6 +2,36 @@
   <head>
     <title>Message</title>
     <meta charset = "UTF-8" />
+
+<STYLE >
+
+
+
+ body {background-color: powderblue;}
+   h1   {color: blue;}
+   .button {
+            padding: 10px 20px;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</STYLE>
+
+
   </head>
   <body>
     <h1>SEND YOUR MESSAGE</h1>
@@ -31,7 +61,7 @@
           <p>
             <label>Your Message</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <textarea name="msg" id="msg"></textarea></p>
-          <p align"center"><input type="submit" value="Send"></p>
+          <button class="button">Send</button>
        </fieldset>
     </form>
   </body>

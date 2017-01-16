@@ -93,64 +93,53 @@ def choosenum():
             di['friendly_name']=i.friendly_name
             di['phone_number']=i.phone_number
             allnumbers.append(di)
-        print "<<<<<<<<<<<<<<<< these numbers are available>>>>>>>>>>>>>>>>",allnumbers
            
     else:
         allnumbers= "sorry no numbers available"
     return render_template('response.html',result=allnumbers)
+    # query="""INSERT into twilioNumbers(name,phNumber,twilioNumber,twilioSid,createdDate)values(%s,%s,%s,%s)"""
+    # cur.execute(query,(name,ynumber,nos,datecreation))
+    # print "Record successfully added"
+    # db.commit()
+    # cur.close()
+    # db.close()
 
 
-    # return "hi"
- #    # return jsonify(request.form)
+@app.route('/purchase',methods=['POST'])
+def purchase():
+    # return 'hiiiiiiii'
+        # logger = logging.getLogger("Purchasing a New Number")
+        logger.info('Entered into PUT method to purchase a new twilio number')
+        client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
+        cursor = g.appdb.cursor()
+        # name = request.json['name']
+        # phnumber = request.json['ynumber']
+        # chosen =request.json['chosen']
+        now=datetime.datetime.now()
+        createdDate=now.strftime("%Y-%m-%d %H:%M:%S")
+        nos=request.form['nos']
+        print nos
+
+        # except:
+        #     logger.error('DB Connection error', exc_info=True)
+
+        number = client.phone_numbers.purchase(phone_number=nos)
+        print '<<<<<<<<<<<<<<purchase'
+        # Twilsid = number['ACCOUNT_SID']
+        # print Twilsid
+        # TwilNum = number['AUTH_TOKEN']
+        # createdDate=now.strftime("%Y-%m-%d %H:%M:%S")
+         # query=""" INSERT INTO `twilioNumbers`(`name`,`phNumber`,`twilioNumber`,`twilioSid`,`createdDate`) VALUES (%s,%s,%s,%s,%s); """
+         # cursor.execute(query,(name,phnumber,TwilNum,Twilsid,createdDate))
+        # g.appdb.commit()
+        # logger.info('Exited from Purchasing a new number PUT method')
+        return render_template("rresponse.html",nos=nos)
 
 
+@app.route('/sndmsg',methods=['POST'])
+def sndmsg():
+    return render_template('home.html')
 
- # # try:
-        
-       
-
-
-
- #        # cursor = g.appdb.cursor()
-
- #     # except:
-
- #     #        logger.error("DB connection or url parameters error", exc_info=True)
-        
- #        client = TwilioRestClient(sid,token)
- #        numbers = client.phone_numbers.search(area_code=areacode,country=countrycode,type="local")
-
-    # ACCOUNT_SID = "AC7f31123e044d86fcbaf0934dc66c6788" 
-    # AUTH_TOKEN = "c732383c7be727ce64b2d3bff60e8724"
-    # country=str(request.form['countries'])
-    # phno=str(request.form['ynumber'])
-    # contain=str(request.form['mnumber'])
-    # name=str(request.form['name'])
-    # areaCode=str(request.form['areacode'])
-    # now=datetime.datetime.now()
-    # datecreation=now.strftime("%Y-%m-%d %H:%M:%S")
-
-
-    # print datecreation,areaCode,name,contain,phno,country
-
-
-    # # db = MySQLdb.connect( host="localhost",user="root",passwd="root",db="twilio" )
-    # # cur = db.cursor()
-    # client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
-    # numbers = client.phone_numbers.search(
-    #     areaCode=areaCode,
-    #     country=country,
-    #     type="local",
-    #     contains=contain
-    # )
-
- 
-    # # logger.info('Exited from genrating twilio number post method')
-    # return lis
-        # return jsonify({"status":status, "response":lis})
-   
-    # print result
-    # return render_template('response.html', result=result)
 
 
 @app.route('/receivingMessages',methods=['POST'])

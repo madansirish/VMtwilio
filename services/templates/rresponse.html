@@ -1,7 +1,9 @@
-<html>
-<head></head>
+<html></html>
+<head>
 <style>
    body {background-color: powderblue;}
+
+
 
 
    .button {
@@ -24,21 +26,18 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+</style>
 
-
- </style>
+</head>
 <body>
-	<h1>List of numbers available are:</h1>
+	<h1>Congratulations You Have Purchased This Number</h1>
+	<h3>You can use it {{ nos }} for sending free messages</h3>
+	
 
- <form action="{{url_for('purchase')}}" method="POST">
 
-  {% for nos in result %}
-        <input type="radio" name="nos" value={{ nos['phone_number'] }} checked> {{ nos['friendly_name'] }}<br>
-        
-   {% endfor %}
- <center><p><button class="button">Purchase</button></p></center>
-</form>
- 
- 
+	<form  action="{{ url_for('sndmsg')}}" method="POST">
+	<button class="button">Try now..... Send Free SMS</button>
+    </form>
+
+
 </body>
-</html>
